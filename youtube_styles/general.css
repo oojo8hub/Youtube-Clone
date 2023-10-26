@@ -4,7 +4,10 @@ p {
   margin-bottom: 0px;
 }
 body {
+  font-family: Roboto, Arial;
   margin: 0;
   padding-top: 80px;
-  padding-left: 85px;
+  padding-left: 96px;
+  padding-right: 24px;
+  background-color: whitesmoke;
 }

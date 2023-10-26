@@ -6,150 +6,201 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap"
-      rel="stylesheet"
-     />
-     
-      <link rel="stylesheet", href="youtube_styles/general.css" />
-      <link rel="stylesheet", href="youtube_styles/header.css" />
-      <link rel="stylesheet", href="youtube_styles/video.css" />
-      <link rel="stylesheet", href="youtube_styles/sidebar.css" />
+      rel="stylesheet" />
+
+    <link rel="stylesheet" , href="youtube_styles/general.css" />
+    <link rel="stylesheet" , href="youtube_styles/header.css" />
+    <link rel="stylesheet" , href="youtube_styles/video.css" />
+    <link rel="stylesheet" , href="youtube_styles/sidebar.css" />
   </head>
 
   <body>
     <div class="header">
-      <div class="left-section"> 
-        <img class = "hamburger-menu" src = "icons/yt_hamburger-menu.svg"> 
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/yt_hamburger-menu.svg" />
 
-        <img  class ="yt_logo" src = "icons/youtube-logo.svg"> 
+        <img class="yt_logo" src="icons/youtube-logo.svg" />
       </div>
-      <div class ="middle-section">
-        <input style= "border-bottom-left-radius: 40px;border-top-left-radius: 40px;"
-           class="search-bar" type="textbox" placeholder=" Search " />
-        <button style= "border-bottom-right-radius: 40px;border-top-right-radius: 40px; "
-           class="search_button">
-          <img class= "search_icon" src="icons/search.svg">
+      <div class="middle-section">
+        <input
+          style="border-bottom-left-radius: 40px; border-top-left-radius: 40px"
+          class="search-bar"
+          type="textbox"
+          placeholder=" Search " />
+        <button
+          style="
+            border-bottom-right-radius: 40px;
+            border-top-right-radius: 40px;
+          "
+          class="search_button">
+          <img class="search_icon" src="icons/search.svg" />
+          <div class="tooltip">Search</div>
         </button>
-        <button  class ="voice_search_button">
-          <img class = "voice_icon" src="icons/voice-search-icon.svg">
+
+        <button class="voice_search_button">
+          <img class="voice_icon" src="icons/voice-search-icon.svg" />
+          <div class="tooltip">Search with Voice</div>
         </button>
-       </div>
-      <div class ="right-section">  
-          <img class="upload_icon"  src ="icons/upload.svg">
-
-          <img class="youtube-apps_icons" src="icons/youtube-apps.svg">
-
-          <div class ="notifications_icons_contianer">
-            <img class ="notifications_icons" src ="icons/notifications.svg">
-
-            <div class="notifications_count">
-              3 
-            </div>
-
-          </div>
-          
-
-          <img class ="current_user" src="channel-pictures/my-channel.jpeg">
+      </div>
+      <div class="right-section">
+        <div class="upload_icon_container">
+          <img class="upload_icon" src="icons/upload.svg" />
+          <div class="tooltip">Create</div>
         </div>
-      
+
+        <div class="notifications_icons_contianer">
+          <img class="notifications_icons" src="icons/notifications.svg" />
+          <div class="tooltip">notifications</div>
+
+          <div class="notifications_count">3</div>
+        </div>
+
+        <img class="current_user" src="channel-pictures/my-channel.jpeg" />
+      </div>
     </div>
-   
+
+
+    <div class="sidebar">
+      <div class="sidebar_link">
+        <img src="icons/home.svg" />
+        <div>Home</div>
+      </div>
+      <div class="sidebar_link">
+        <img src="icons/explore.svg" />
+        <div>Explore</div>
+      </div>
+      <div class="sidebar_link">
+        <img src="icons/subscriptions.svg" />
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar_link">
+        <img src="icons/originals.svg" />
+        <div>Originals</div>
+      </div>
+      <div class="sidebar_link">
+        <img src="icons/youtube-music.svg" />
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar_link">
+        <img src="icons/library.svg" />
+        <div>Library</div>
+      </div>
+    </div>
 
     <div class="grid_formating">
       <div class="video_preview">
         <div class="thumbnail_row">
-          <img class="thumbnail" src="thumbnails/thumbnail-1.webp" />
-          <div class ="video_time">
-            14:20
-          </div>
+          <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+            <img class="thumbnail" src="thumbnails/thumbnail-1.webp" />
+            <div class="video_time">14:20</div>
+          </a>
         </div>
 
         <div class="channel_grid_style">
           <div class="channel_profile">
-            <img
-              class="profile_picture"
-              src="channel-pictures/brown.jpeg"
-              alt="Avatar" />
+            <a href="https://www.youtube.com/c/mkbhd">
+              <img
+                class="profile_picture"
+                src="channel-pictures/brown.jpeg"
+                alt="Avatar" />
+            </a>
           </div>
 
           <div class="channel_info">
-            <p class="video_title">
-              Talking Tech and AI with Google CEO Sundar Pichai!
-            </p>
-            <p class="video_author">Marques Brownlee</p>
+            <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+              <p class="video_title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+            </a>
+            <a href="https://www.youtube.com/c/mkbhd">
+              <p class="video_author">Marques Brownlee</p>
+            </a>
 
             <p class="video_stat">3.4M views &#183; 6 months ago</p>
           </div>
         </div>
       </div>
       <div class="video_preview">
-        <div class="thumbnail_row">
-          <img class="thumbnail" src="thumbnails/mark.webp" />
-          <div class ="video_time">
-            10:00
+        <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+          <div class="thumbnail_row">
+            <img class="thumbnail" src="thumbnails/mark.webp" />
+            <div class="video_time">10:00</div>
           </div>
-        </div>
+        </a>
 
         <div class="channel_grid_style">
           <div class="channel_profile">
-            <img
-              class="profile_picture"
-              src="channel-pictures/Markiplier.jpeg"
-              alt="Avatar" />
+            <a href="https://www.youtube.com/c/markiplier">
+              <img
+                class="profile_picture"
+                src="channel-pictures/Markiplier.jpeg"
+                alt="Avatar" />
+            </a>
           </div>
 
           <div class="channel_info">
-            <p class="video_title">Try Not To Laugh Challenge #9</p>
-            <p class="video_author">Markiplier</p>
+            <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+              <p class="video_title">Try Not To Laugh Challenge #9</p>
+            </a>
 
+            <a href="https://www.youtube.com/c/markiplier">
+              <p class="video_author">Markiplier</p>
+            </a>
             <p class="video_stat">19M views &#183; 4 year ago</p>
           </div>
         </div>
       </div>
 
       <div class="video_preview">
-        <div class="thumbnail_row">
-          <img class="thumbnail" src="thumbnails/bafta_tn.webp" />
-          <div class ="video_time">
-            8:00
+        <a href="https://www.youtube.com/watch?v=IAy9WVR5BUg">
+          <div class="thumbnail_row">
+            <img class="thumbnail" src="thumbnails/bafta_tn.webp" />
+            <div class="video_time">8:00</div>
           </div>
-        </div>
+        </a>
 
         <div class="channel_grid_style">
-          <div class="channel_profile">
-            <img
-              class="profile_picture"
-              src="channel-pictures/Bafta_profile.jpeg"
-              alt="Avatar" />
-          </div>
+          <a href="https://www.youtube.com/@bafta">
+            <div class="channel_profile">
+              <img
+                class="profile_picture"
+                src="channel-pictures/Bafta_profile.jpeg"
+                alt="Avatar" />
+            </div>
+          </a>
 
           <div class="channel_info">
-            <p class="video_title">
-              How director Celine Song hopes you'll feel about Past Lives |
-              BAFTA
-            </p>
+            <a href="https://www.youtube.com/watch?v=IAy9WVR5BUg">
+              <p class="video_title">
+                How director Celine Song hopes you'll feel about Past Lives |
+                BAFTA
+              </p>
+            </a>
 
-            <p class="video_author">
-              BAFTA
-              <svg
-                class="bafta"
-                height="24"
-                viewBox="0 0 24 24"
-                width="24"
-                focusable="false"
-                style="
-                  pointer-events: none;
-                  display: block;
-                  width: 9px;
-                  height: 10px;
-                  display: inline-block;
-                ">
-                <path
-                  d="M12 2C6.5 2 2 6.5 2
+            <a href="https://www.youtube.com/@bafta">
+              <p class="video_author">
+                BAFTA
+                <svg
+                  class="bafta"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  focusable="false"
+                  style="
+                    pointer-events: none;
+                    display: block;
+                    width: 9px;
+                    height: 10px;
+                    display: inline-block;
+                  ">
+                  <path
+                    d="M12 2C6.5 2 2 6.5 2
                    12s4.5 10 10 10 10-4.5 
                    10-10S17.5 2 12 2zM9.8 
                    17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path>
-              </svg>
-            </p>
+                </svg>
+              </p>
+            </a>
 
             <p class="video_stat">2.1k views &#183; 6 days ago</p>
           </div>
@@ -157,45 +208,53 @@
       </div>
 
       <div class="video_preview">
-        <div class="thumbnail_row">
-          <img class="thumbnail" src="thumbnails/aba&preach_tn.webp" />
-          <div class ="video_time">
-            12:05
+        <a href="https://www.youtube.com/watch?v=LD4DxZcblZY">
+          <div class="thumbnail_row">
+            <img class="thumbnail" src="thumbnails/aba&preach_tn.webp" />
+            <div class="video_time">12:05</div>
           </div>
-        </div>
+        </a>
 
         <div class="channel_grid_style">
-          <div class="channel_profile">
-            <img
-              class="profile_picture"
-              src="channel-pictures/aba&preac_profile.jpeg"
-              alt="Avatar" />
-          </div>
+          <a href="https://www.youtube.com/@AbaNPreach">
+            <div class="channel_profile">
+              <img
+                class="profile_picture"
+                src="channel-pictures/aba&preac_profile.jpeg"
+                alt="Avatar" />
+            </div>
+          </a>
 
           <div class="channel_info">
-            <p class="video_title">Women Rank Each Other By Looks... It Gets Awkward</p>
-            <p class="video_author">Aba N Preach
-              <svg
-              class="bafta"
-              height="24"
-              viewBox="0 0 24 24"
-              width="24"
-              focusable="false"
-              style="
-                pointer-events: none;
-                display: block;
-                width: 9px;
-                height: 10px;
-                display: inline-block;
-              ">
-              <path
-                d="M12 2C6.5 2 2 6.5 2
-                 12s4.5 10 10 10 10-4.5 
-                 10-10S17.5 2 12 2zM9.8 
-                 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path>
-            </svg>
-          </p>
-            </p>
+            <a href="https://www.youtube.com/watch?v=LD4DxZcblZY">
+              <p class="video_title">
+                Women Rank Each Other By Looks... It Gets Awkward
+              </p>
+            </a>
+            <a href="https://www.youtube.com/@AbaNPreach">
+              <p class="video_author">
+                Aba N Preach
+                <svg
+                  class="bafta"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  focusable="false"
+                  style="
+                    pointer-events: none;
+                    display: block;
+                    width: 9px;
+                    height: 10px;
+                    display: inline-block;
+                  ">
+                  <path
+                    d="M12 2C6.5 2 2 6.5 2
+                   12s4.5 10 10 10 10-4.5 
+                   10-10S17.5 2 12 2zM9.8 
+                   17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path>
+                </svg>
+              </p>
+            </a>
 
             <p class="video_stat">634k views &#183; 5 days ago</p>
           </div>
@@ -203,44 +262,51 @@
       </div>
 
       <div class="video_preview">
-        <div class="thumbnail_row">
-          <img class="thumbnail" src="thumbnails/cut_prfilr.webp" />
-          <div class ="video_time">
-            9:00
+        <a href="https://www.youtube.com/watch?v=wXFE2-Cy_OQ">
+          <div class="thumbnail_row">
+            <img class="thumbnail" src="thumbnails/cut_prfilr.webp" />
+            <div class="video_time">9:00</div>
           </div>
-        </div>
+        </a>
 
         <div class="channel_grid_style">
-          <div class="channel_profile">
-            <img
-              class="profile_picture"
-              src="channel-pictures/cut_tn.jpeg"
-              alt="Avatar" />
-          </div>
+          <a href="https://www.youtube.com/@cut">
+            <div class="channel_profile">
+              <img
+                class="profile_picture"
+                src="channel-pictures/cut_tn.jpeg"
+                alt="Avatar" />
+            </div>
+          </a>
 
           <div class="channel_info">
-            <p class="video_title">Muslims Play Truth or "Drink" | Cut</p>
-            <p class="video_author">Cut
-              <svg
-              class="bafta"
-              height="24"
-              viewBox="0 0 24 24"
-              width="24"
-              focusable="false"
-              style="
-                pointer-events: none;
-                display: block;
-                width: 9px;
-                height: 10px;
-                display: inline-block;
-              ">
-              <path
-                d="M12 2C6.5 2 2 6.5 2
-                 12s4.5 10 10 10 10-4.5 
-                 10-10S17.5 2 12 2zM9.8 
-                 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path>
-            </svg>
-            </p>
+            <a href="https://www.youtube.com/watch?v=wXFE2-Cy_OQ">
+              <p class="video_title">Muslims Play Truth or "Drink" | Cut</p>
+            </a>
+            <a href="https://www.youtube.com/@cut">
+              <p class="video_author">
+                Cut
+                <svg
+                  class="bafta"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  focusable="false"
+                  style="
+                    pointer-events: none;
+                    display: block;
+                    width: 9px;
+                    height: 10px;
+                    display: inline-block;
+                  ">
+                  <path
+                    d="M12 2C6.5 2 2 6.5 2
+                   12s4.5 10 10 10 10-4.5 
+                   10-10S17.5 2 12 2zM9.8 
+                   17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path>
+                </svg>
+              </p>
+            </a>
 
             <p class="video_stat">127K views &#183; 1 day ago</p>
           </div>
@@ -248,24 +314,32 @@
       </div>
 
       <div class="video_preview">
-        <div class="thumbnail_row">
-          <img class="thumbnail" src="thumbnails/madueax_tn.webp" />
-          <div class ="video_time">
-            11:35
+        <a href="https://www.youtube.com/watch?v=mfyH_b2bpJw">
+          <div class="thumbnail_row">
+            <img class="thumbnail" src="thumbnails/madueax_tn.webp" />
+            <div class="video_time">11:35</div>
           </div>
-        </div>
+        </a>
 
         <div class="channel_grid_style">
-          <div class="channel_profile">
-            <img
-              class="profile_picture"
-              src="channel-pictures/madueux_pf.jpeg"
-              alt="Avatar" />
-          </div>
+          <a href=" https://www.youtube.com/@madeauxafrica">
+            <div class="channel_profile">
+              <img
+                class="profile_picture"
+                src="channel-pictures/madueux_pf.jpeg"
+                alt="Avatar" />
+            </div>
+          </a>
 
           <div class="channel_info">
-            <p class="video_title">Malobi goes on a Blind Date in Lagos with Rapper KD | PEEKER</p>
-            <p class="video_author">Madeaux Africa</p>
+            <a href="https://www.youtube.com/watch?v=mfyH_b2bpJw">
+              <p class="video_title">
+                Malobi goes on a Blind Date in Lagos with Rapper KD | PEEKER
+              </p>
+            </a>
+            <a href=" https://www.youtube.com/@madeauxafrica">
+              <p class="video_author">Madeaux Africa</p>
+            </a>
 
             <p class="video_stat">9.6K views &#183;3 weeks ago</p>
           </div>
