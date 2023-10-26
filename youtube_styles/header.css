@@ -7,6 +7,7 @@
   top: 0px;
   left: 0px;
   right: 0px;
+  z-index: 100;
   background-color: whitesmoke;
   border-bottom-width: 1px;
   border-bottom-style: solid;
@@ -92,6 +93,23 @@
   width: 180px;
   flex-shrink: 0;
 }
+.notifications_icons_contianer {
+  position: relative;
+}
+.notifications_count {
+  color: white;
+  background-color: red;
+  border-radius: 10px;
+  top: -3px;
+  right: -5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: absolute;
+
+  font-family: Roboto, Arial;
+  font-size: 11px;
+}
+
 .upload_icon,
 .youtube-apps_icons,
 .notifications_icons {

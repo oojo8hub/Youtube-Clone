@@ -24,6 +24,21 @@
   font-weight: 500;
   line-height: 14px;
 }
+.video_time {
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  font-weight: 500px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+}
 
 .profile_picture {
   width: 40px;
@@ -32,6 +47,7 @@
 
 .thumbnail_row {
   margin-bottom: 12px;
+  position: relative;
 }
 .grid_formating {
   display: grid;
