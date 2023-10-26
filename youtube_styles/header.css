@@ -48,15 +48,12 @@
   flex: 1;
   height: 36px;
   font-size: 16px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgb(192, 192, 192, 192);
+  border: 1px solid rgb(192, 192, 192, 192);
   border-radius: 2px;
   box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.05);
   width: 0;
 }
 .search-bar::placeholder {
-  font-family: Roboto, Arial;
   font-size: 16px;
   padding-left: 10px;
 }
@@ -70,9 +67,44 @@
   margin-left: -5px;
   margin-right: 10px;
 }
+.search_button .tooltip,
+.voice_search_button .tooltip,
+.upload_icon_container .tooltip,
+.notifications_icons_contianer .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.search_button:hover .tooltip,
+.voice_search_button:hover .tooltip,
+.upload_icon_container:hover .tooltip,
+.notifications_icons_contianer:hover .tooltip {
+  opacity: 1;
+}
+
+.search_button,
+.voice_search_button,
+.upload_icon_container,
+.notifications_icons_contianer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .search_icon {
   height: 25px;
-  margin-top: 4px;
 }
 .voice_search_button {
   height: 40px;
@@ -84,7 +116,6 @@
 }
 .voice_icon {
   height: 20px;
-  margin-top: 4px;
 }
 .right-section {
   display: flex;
@@ -106,7 +137,6 @@
   padding-right: 5px;
   position: absolute;
 
-  font-family: Roboto, Arial;
   font-size: 11px;
 }
 
